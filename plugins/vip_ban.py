@@ -8,27 +8,26 @@ from VIPMUSIC.misc import SUDOERS
 from VIPMUSIC.utils.vip_ban import admin_filter
 
 vip_text = [
-    "hey please don't disturb me.",
-    "who are you",
-    "aap kon ho",
-    "aap mere owner to nhi lgte ",
-    "hey tum mera name kyu le rhe ho meko sone do",
-    "ha bolo kya kaam hai ",
-    "dekho abhi mai busy hu ",
-    "hey i am busy",
-    "aapko smj nhi aata kya ",
-    "leave me alone",
-    "dude what happend",
-]
-
+  "hei tolong jangan ganggu aku.",
+  "siapa kamu",
+  "Hai",
+  "Hanya owner yg bisa memarahiku",
+  "Apa?",
+  "Apakah kamu suka aku?",
+  "Gimana hari hari nya?",
+  "Saya butuh teman",
+  "Jika kamu memarahi ku nanti aku sedih.",
+  "Aku tidak suka sendiri",
+  "Apakah kamu mau menemaniku",
+  ]
+  
 strict_txt = [
-    "i can't restrict against my besties",
-    "are you serious i am not restrict to my friends",
-    "fuck you bsdk k mai apne dosto ko kyu kru",
-    "hey stupid admin ",
-    "ha ye phele krlo maar lo ek dusre ki gwaand",
-    "i can't hi is my closest friend",
-    "i love him please don't restict this user try to usertand ",
+  "aku tidak bisa membatasi terhadap sahabatku",
+  "Apa ini?",
+  "Hanya admin",
+  "Apakah kamu temanku?",
+  "aku tidak bisa hai adalah teman terdekatku",
+  "aku mencintainya tolong jangan batasi pengguna ini, cobalah untuk mengerti"
 ]
 
 
@@ -48,7 +47,7 @@ channel = ["channel"]
 # ========================================= #
 
 
-@app.on_message(filters.command(["ip", "iyush"], prefixes=["V", "P"]) & admin_filter)
+@app.on_message(filters.command(["D"], prefixes=["/"]) & admin_filter)
 async def restriction_app(app: app, message):
     reply = message.reply_to_message
     chat_id = message.chat.id
