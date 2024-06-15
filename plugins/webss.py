@@ -28,7 +28,7 @@ async def take_ss(_, message: Message):
         await message.reply_text(str(e))
 
 
-__MODULE__ = "web"
+__MODULE__ = "Web"
 __HELP__ = """
 **Web Screenshot**
 
