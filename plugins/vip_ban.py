@@ -143,7 +143,7 @@ async def restriction_app(app: app, message):
                 await message.reply("demoted !")
 
 
-__MODULE__ = "Smart Ban"
+__MODULE__ = "Ban"
 __HELP__ = """
 - `Dante`: [Ban or unban] users.
 - `Dante`: [Mute, kick, promote, or demote] users.
