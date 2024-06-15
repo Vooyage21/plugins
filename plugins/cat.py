@@ -13,8 +13,8 @@ from VIPMUSIC import app
 
 close_keyboard = InlineKeyboardMarkup(
     [
-        [InlineKeyboardButton(text="Rᴇғʀᴇsʜ", callback_data="refresh_cat")],
-        [InlineKeyboardButton(text="〆 ᴄʟᴏsᴇ 〆", callback_data="close")],
+        [InlineKeyboardButton(text="Refresh", callback_data="refresh_cat")],
+        [InlineKeyboardButton(text="Close", callback_data="close")],
     ]
 )
 
