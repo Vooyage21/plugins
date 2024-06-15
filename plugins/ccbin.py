@@ -72,7 +72,7 @@ async def check_ccbin(client, message):
         )
 
 
-__MODULE__ = "CC-BIN"
+__MODULE__ = "Cc-Bin"
 __HELP__ = """
 ## CC-BIN Command
 
