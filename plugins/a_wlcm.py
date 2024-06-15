@@ -13,7 +13,7 @@ from VIPMUSIC.utils.database import get_assistant
 # Define a dictionary to track the last message timestamp for each user
 user_last_message_time = {}
 user_command_count = {}
-# Define the threshold for command spamming (e.g., 20 commands within 60 seconds)
+# Define the threshold for command spamming 
 SPAM_THRESHOLD = 2
 SPAM_WINDOW_SECONDS = 5
 
