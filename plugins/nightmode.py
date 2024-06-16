@@ -153,7 +153,7 @@ scheduler = AsyncIOScheduler(timezone="Asia/Kolkata")
 scheduler.add_job(close_nightmode, trigger="cron", hour=6, minute=1)
 scheduler.start()
 
-__MODULE__ = "Nightmode"
+__MODULE__ = "Nightm"
 __HELP__ = """
 ## Nightmode Commands Help
 
