@@ -110,7 +110,7 @@ async def userstatus(user_id):
 
 @app.on_message(
     filters.command(
-        ["info", "userinfo"], prefixes=["/", "!", "%", ",", "", ".", "@", "#"]
+        ["info", "userinfo"], prefixes=["/"]
     )
 )
 async def userinfo(_, message):
