@@ -173,4 +173,4 @@ def phone_number_info(client, message):
         message.reply_text("🌐 Phone Number Details:\n" + details_str)
 
     except phonenumbers.phonenumberutil.NumberParseException as e:
-        message.reply_text("❌ Nomor tidak di ketahui!: " + str(e))
+        await message.reply_text("❌ Nomor tidak di ketahui!: " + str(e))
