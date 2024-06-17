@@ -18,7 +18,6 @@ def phone_number_info(client, message):
             if carrier.name_for_number(number, "en")
             else "Unknown Carrier"
         )
-
         number_type = phonenumberutil.number_type(number)
         number_type_description = (
             "Mobile"
@@ -171,7 +170,7 @@ def phone_number_info(client, message):
 
         details_str = "\n".join([f"{key}: {value}" for key, value in details.items()])
 
-        message.reply_text("🌐 Phone Number Details 🌐:\n" + details_str)
+        message.reply_text("🌐 Phone Number Details:\n" + details_str)
 
     except phonenumbers.phonenumberutil.NumberParseException as e:
-        message.reply_text("❌ Number could not be parsed: " + str(e))
+        message.reply_text("❌ Nomor tidak di ketahui!: " + str(e))
