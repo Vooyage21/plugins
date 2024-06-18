@@ -50,7 +50,7 @@ async def ban_user(
     user_mention = mention(user_id, first_name)
     admin_mention = mention(admin_id, admin_name)
 
-    msg_text += f"{user_mention} was banned by {admin_mention}\n"
+    msg_text += f"{user_mention} was banned by {admin_mention}\n\nban sukses."
 
     if reason:
         msg_text += f"Reason: `{reason}`\n"
