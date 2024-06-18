@@ -5,7 +5,11 @@ from pyrogram.errors.exceptions.bad_request_400 import (
     ChatAdminRequired,
     UserAdminInvalid,
 )
-from pyrogram.types import ChatPermissions
+from pyrogram.types import (
+    InlineKeyboardButton,
+    InlineKeyboardMarkup,
+    ChatPermissions
+)
 
 from VIPMUSIC import app
 
